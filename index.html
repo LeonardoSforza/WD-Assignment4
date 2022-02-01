@@ -4,7 +4,334 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Self Evaluation Report</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <nav id="navbar">
+      <header id="doc-title">
+        <h1>Self Evaluation Report</h1>
+      </header>
+      <ul>
+        <li><a class="menu" href="#front-matter">Front Matter</a></li>
+        <li><a class="menu" href="#introduction">Introduction</a></li>
+        <li><a class="menu" href="#accessibility-highlight">Accessibility Highlights</a></li>
+        <li><a class="menu" href="#improvement-plan">Improvement Plan</a></li>
+        <li><a class="menu" href="#appendix-A">Appendix A</a></li>
+        <li><a class="menu" href="#appendix-B">Appendix B</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section">
+        <header id="front-matter">Front Matter</header>
+          <p>Title: Evaluation for the Website- Magic Device</p>
+          <p>Date of evaluation: 01/02/2022</p>
+          <p>Group number: 4</p>
+          <p>Author names: Leonardo Sforza, Nora Cai</p>
+      </section>
+
+      <section class="main-section">
+        <header id="introduction">Introduction</header>
+          <p>
+            Overall speaking, the page has good usability and accessibility features. The contents are 
+            positioned and divided into sections to guide the users, for example, the display field and input 
+            field in the “best selling products” table are separated. This makes the learning process intuitive and
+            also makes the page memorable. To increase user satisfaction, we added lots of visual cues (such as big
+            and special fonts for the titles, alternate shading for the table rows, and whitespaces between
+            sections) to make the page more aesthetic and to ease readability, which allows for users to navigate through the website more 
+            pleasantly. The page also has high efficiency, the sorting features in the table allows users to sort
+            according to different variables and find the products efficiently. The dynamic table also makes
+            editing the table content very efficient. However, more features can be added to guide new users,
+            for example, more cues should be provided to indicate which buttons are clickable (e.g., the column 
+            title). Further, improvements can still be made so that we will be able to cover the needs of more 
+            users. For example, for users with color deficiencies or blindness, we should not depend solely on 
+            colors to convey information, and audio cues can be added.
+          </p>
+      </section>
+
+      <section class="main-section">
+        <header id="accessibility-highlight">Accessibility Highlight</header>
+          <p><strong>1.3.1 Info and Relationships</strong></p>
+            <p>
+              This is very relevant to our website since we focus a lot on responsive development and also cues to 
+              improve usability and accessibility. The website is responsive to screen size and also printing style.
+              Each sections are also separated with white lines and marked distinct using title with large texts and 
+              special font style. To improve the usability, we should also state more explicitly which fields of input 
+              are required, and also make it more obvious where the clickable buttons are at (e.g. the sorting 
+              button on the column header). Further, the usability of the page is still not good enough for users 
+              with vision and/or hearing deficiencies, or disabilities. In order to improve accessibility for those 
+              users, auditory cues and voice control need to be implemented.
+            </p>
+          <p><strong>1.3.1 Info and Relationships</strong></p>
+            <p>
+              Each section has a descriptive title which tells the user what the section is about, images are 
+              accompanied with captions whenever necessary. However, more labels and descriptions can be 
+              added to describe the functionalities and requirements of the tables, buttons, and input fields.
+            </p>
+          <p><strong>1.4.1 Use of Color</strong></p>
+            <p>
+              Overall speaking, our web does not depend solely on color to convey information or instructions. 
+              Colors are added merely for decoration purposes and to aid readability, so inability to perceive the
+              colors won’t affect the usability. Color is also not the only way to provide user with information. For 
+              example, for the input fields in the “Best Selling Products” table, the input box turns yellow to 
+              indicate that it is the current input field, but users with color blindness is still able to understand this 
+              piece of information, since the outline of the input box also becomes thicker, and the cursor would 
+              blink. The only information that users with color deficiencies might miss out is whether the link has 
+              been visited or not (the link turns greens after being visited)
+            </p>
+      </section>
+
+      <section class="main-section">
+        <header id="improvement-plan">Improvememt Plan</header>
+          <table>
+            <tr>
+              <th>Priority</th>
+              <th>Issue</th>
+              <th>Implementation Plan</th>
+            </tr>
+            <tr>
+              <td>High- because it affects usability</td>
+              <td>Not clear which input fields are required</td>
+              <td>
+                We labelled required input boxes with 
+                “* Required” , so that the user know about the input requirements. 
+              </td>
+            </tr>
+            <tr>
+              <td>High- because it affects usability</td>
+              <td>Not clear where the clickable buttons are</td>
+              <td>
+                We added a label to the table to indicate that the tables 
+                can be sorted by clicking the column header. We also amended 
+                the css file, so that the clickable column header changes color 
+                when the user hovers over it, this tells the user that this is 
+                a clickable button. The color changes from black background and 
+                white text to white background and black text, so that it is also
+                friendly for users with color blindness.
+              </td>
+            </tr>
+            <tr>
+              <td>High- because it affects usability</td>
+              <td>No descriptive title for the first table</td>
+              <td>
+                We added a label to the table to describe 
+                its content: “Sortable Table with content from API”.
+              </td>
+            </tr>
+            <tr>
+              <td>Medium- because it won’t affect usability</td>
+              <td>Missing HTML tag and CSS properties (Comment from TA, see appendix B)</td>
+              <td>We implemented the missing HTML tags and CSS properties</td>
+            </tr>
+            <tr>
+              <td>Medium- because it won’t affect usability. But it is still important for good practice</td>
+              <td>Not naming the CSS with the required name (See appendix B)</td>
+              <td>We changed the name of the CSS file to “styles.css”</td>
+            </tr>
+            <tr>
+              <td>Medium- because it won’t affect usability. But it is still important for good practice</td>
+              <td>Forgot to delete the commented out code</td>
+              <td>We deleted those</td>
+            </tr>
+            <tr>
+              <td>Medium- because it won’t affect usability. But it is still important for good practice</td>
+              <td>The code lack comments</td>
+              <td>We added comments where necessary</td>
+            </tr>
+            <tr>
+              <td>
+                Low- We chose not to fix this issue because not 
+                knowing that the page has been visited or not is 
+                not a very big issue. We applied the styling properties 
+                because the assignment demanded that.
+              </td>
+              <td>Users with color deficiencies will not be able to tell whether they have visited the link or not</td>
+              <td>NA</td>
+            </tr>
+            <tr>
+              <td>
+                Low- We chose not to implement this mainly due 
+                to time constraints. Also, users with those 
+                deficiencies only make up a small percentage 
+                of our target users.
+              </td>
+              <td>Usability is low for users with visual and/or hearing deficiencies, or disabilities</td>
+              <td>NA</td>
+            </tr>
+          </table>
+      </section>
+
+      <section class="main-section">
+        <header id="appendix-A">Appendix A</header>
+      </section>
+        <table>
+          <caption>Source 1, Web Content Accessibility guidelines</caption>
+          <tr>
+            <th>Principle</th>
+            <th>Guidelines</th>
+            <th>Fulfills Success Criteria? (Y/N)</th>
+            <th>Explanation</th>
+          </tr>
+          <tr>
+            <td>1.1- Text Alternative</td>
+            <td>1.1.1 Non-text Content</td>
+            <td>Y</td>
+            <td>
+              All non-text content that is presented to the user has a text alternative. 
+              For images, there is always an alt attribute that provides a text description 
+              as an alternative for displaying the image when the image cannot be loaded. 
+              For input fields, there are names that describe the purpose. 
+            </td>
+          </tr>
+          <tr>
+            <td rowspan = "3">1.3- Adaptable</td>
+            <td>1.3.1 Info and Relationships</td>
+            <td>Y&N</td>
+            <td>
+              The Web fulfils the requirement as it is responsive to screen size and also 
+              printing style. It is also friendly for sighted users as we use large and bold 
+              text for headings, and added whitespaces (indents, blank lines, etc.) where 
+              necessary. However, the page is still not friendly for blind and/or deaf users. 
+              Also, we should mark all required fields with an asterisk.
+            </td>
+          </tr>
+          <tr>
+            <td>1.3.2 Meaningful Sequence</td>
+            <td>Y</td>
+            <td>
+              The web has a meaningful sequence. For example, in the two tables, 
+              users can sort the products according to different variables, 
+              which help to find the products effectively.
+            </td>
+          </tr>
+          <tr>
+            <td>1.3.3 Sensory Characteristics</td>
+            <td>Y</td>
+            <td>There are no instructions on the page that depend solely on sensory characteristics. </td>
+          </tr>
+          <tr>
+            <td rowspan = "4">1.4- Distinguishable</td>
+            <td>1.4.1 Use of Color</td>
+            <td>Y&N</td>
+            <td>
+              Overall speaking, our web does not depend solely on color to convey 
+              information or instructions. The only information that users with 
+              color deficiencies might miss out is the link (the link turns greens 
+              after being visited)
+            </td>
+          </tr>
+          <tr>
+            <td>1.4.2 Audio Control</td>
+            <td>NA</td>
+            <td>No audio is included in the Web</td>
+          </tr>
+          <tr>
+            <td>1.4.3 Contrast (Level AA)</td>
+            <td>Y</td>
+            <td>
+              The visual presentation of text and images of text has a contrast ratio greater than 4.5:1. 
+              The average contrast ratio on our website is 21:1.
+            </td>
+          </tr>
+          <tr>
+            <td>1.4.4 Resize text (Level AA)</td>
+            <td>Y</td>
+            <td>Text can be resized without assistive technology up to 200 percent without loss of content or functionality.</td>
+          </tr>
+          <tr>
+            <td rowspan = "2">2.1- Keyboard Accessible</td>
+            <td>2.1.1 Keyboard</td>
+            <td>N</td>
+            <td>All functionality of the content is operable through a keyboard interface, except for sorting tables. </td>
+          </tr>
+          <tr>
+            <td>2.1.2 No keyboard Trap</td>
+            <td>Y</td>
+            <td>When a user wants to add or reset the table, the controls in the widget are part of the tab order within the website.</td>
+          </tr>
+          <tr>
+            <td rowspan = "8">2.4- Navigable</td>
+            <td>2.4.1 Bypass Blocks</td>
+            <td>Y</td>
+            <td>
+              A navigation bar at the top of the website allows the user to jump to 
+              different sections in our website without need to tab through the whole website.
+            </td>
+          </tr>
+          <tr>
+            <td>2.4.2 Page Titled</td>
+            <td>Y</td>
+            <td>The title of our website clearly describes the outlined topics.</td>
+          </tr>
+          <tr>
+            <td>2.4.3 Focus Order</td>
+            <td>Y</td>
+            <td>Our website can be navigated sequentially and the navigation prioritizes the importance of our website.</td>
+          </tr>
+          <tr>
+            <td>2.4.4 Link Purpose</td>
+            <td>Y</td>
+            <td>The links on our navigation bar where the text provides a description of where the link will send the user.</td>
+          </tr>
+          <tr>
+            <td>2.4.5 Multiple Ways (Level AA)</td>
+            <td>Y</td>
+            <td>Our website contains hyperlinks to all the different sections on the website for quick access.</td>
+          </tr>
+          <tr>
+            <td>2.4.6 Headings and Labels (Level AA)</td>
+            <td>Y&N</td>
+            <td>
+              On the first table, the label does not provide a description of the table. 
+              However, the second table does provide context to the table.
+            </td>
+          </tr>
+          <tr>
+            <td>2.4.7 Focus Visible (Level AA)</td>
+            <td>Y</td>
+            <td>When the text fields receive focus, the background changes, indicating that the user can insert text.</td>
+          </tr>
+          <tr>
+            <td>2.4.9 Link Purpose (Level AAA)</td>
+            <td>Y</td>
+            <td>The box and the text for the titles of the tables are part of the same button action.</td>
+          </tr>
+        </table>
+
+      <section class="main-section">
+        <header id="appendix-B">Appendix B</header>
+        <table>
+          <caption>Source 2, TA Feedback Assignment 1 & 2</caption>
+          <tr>
+            <th>Assignment Number</th>
+            <th>Feedback Comment</th>
+            <th>Feedback Type</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Missing -dl tag</td>
+            <td>Could be used to improve the usability or accessibility of your page</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Missing font-style</td>
+            <td>Technical implementation detail that has no impact on the usability or accessibility of your page</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Wrong filename for your CSS file</td>
+            <td>Technical implementation detail that has no impact on the usability or accessibility of your page</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              There is a whole chunk of commented code left in the JS file. 
+              Also, the js file lacks comments. Apart from that good job with the assignment!
+            </td>
+            <td>Technical implementation detail that has no impact on the usability or accessibility of your page</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
 </html>
